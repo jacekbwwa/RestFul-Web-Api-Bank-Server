@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Bank online JB</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+    </h:head>
+    <h:body>
+        <h1>Jacek Banking Online</h1>
+        <br />
+        <br />
+        <form name="form" action="login.php" method="post">
+        <p> Customer e-mail: </p>
+        <input type="login" name="login" style="width:200px "/><br />
+        <p >Password: </p>
+        <input type="password" name="haslo" style="width:200px "/><br /><br/>
+        <input type="submit" value="Log in" style="width:200px;background-color: lightgray"/>
+        </form>
+        <br/>
+        <br/>
+        <div > New customer? Please <a href="register.html"> Sign up </a></div>
+        <div > New customer? Please <h:link outcome="/customer/Create" value="Sign up"/></div>
+        <br />
+        <br />
+        <h:link outcome="/account/List" value="Show All Account Items"/>
+        <br />
+        <h:link outcome="/customer/List" value="Show All Customer Items"/>
+        <br />
+        <h:link outcome="/transaction/List" value="Show All Transaction Items"/>
+    </h:body>
+
+
+
+</html>
+
